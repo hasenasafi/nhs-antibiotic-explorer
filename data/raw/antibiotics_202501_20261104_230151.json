@@ -1,0 +1,3317 @@
+{
+  "help": "https://opendata.nhsbsa.net/api/3/action/help_show?name=datastore_search_sql",
+  "success": true,
+  "result": {
+    "help": "https://demo.ckan.org/api/3/action/help_show?name=datastore_search_sql",
+    "success": "true",
+    "result": {
+      "records": [
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501011P0",
+          "bnf_name": "Phenoxymethylpenicillin (Penicillin V)",
+          "total_items": 45080,
+          "total_nic": 153459.79
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501050B0",
+          "bnf_name": "Clarithromycin",
+          "total_items": 24834,
+          "total_nic": 110772.83
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501030L0",
+          "bnf_name": "Lymecycline",
+          "total_items": 9464,
+          "total_nic": 67569.21
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501011P0",
+          "bnf_name": "Phenoxymethylpenicillin (Penicillin V)",
+          "total_items": 17341,
+          "total_nic": 52686.08
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501110C0",
+          "bnf_name": "Metronidazole",
+          "total_items": 5457,
+          "total_nic": 19131.79
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501050H0",
+          "bnf_name": "Erythromycin ethylsuccinate",
+          "total_items": 2066,
+          "total_nic": 37829.77
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501050A0",
+          "bnf_name": "Azithromycin",
+          "total_items": 8958,
+          "total_nic": 60697.36
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501050C0",
+          "bnf_name": "Erythromycin",
+          "total_items": 2826,
+          "total_nic": 45944.63
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501030Z0",
+          "bnf_name": "Doxycycline monohydrate",
+          "total_items": 1063,
+          "total_nic": 14341.91
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501070X0",
+          "bnf_name": "Rifaximin",
+          "total_items": 1035,
+          "total_nic": 135922.79
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501015P0",
+          "bnf_name": "Pivmecillinam hydrochloride",
+          "total_items": 2249,
+          "total_nic": 19194.3
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501090R0",
+          "bnf_name": "Rifampicin",
+          "total_items": 201,
+          "total_nic": 10798.69
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501070X0",
+          "bnf_name": "Rifaximin",
+          "total_items": 1928,
+          "total_nic": 408912.99
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501040H0",
+          "bnf_name": "Gentamicin sulfate",
+          "total_items": 56,
+          "total_nic": 2996.96
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501030F0",
+          "bnf_name": "Demeclocycline hydrochloride",
+          "total_items": 69,
+          "total_nic": 33093.11
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501090R0",
+          "bnf_name": "Rifampicin",
+          "total_items": 239,
+          "total_nic": 13647.36
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501021K0",
+          "bnf_name": "Cefuroxime axetil",
+          "total_items": 26,
+          "total_nic": 606.47
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501021C0",
+          "bnf_name": "Cefixime",
+          "total_items": 1,
+          "total_nic": 3.78
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501070AC",
+          "bnf_name": "Fidaxomicin",
+          "total_items": 22,
+          "total_nic": 29700
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501011P0",
+          "bnf_name": "Phenoxymethylpenicillin (Penicillin V)",
+          "total_items": 313,
+          "total_nic": 1177.58
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501090H0",
+          "bnf_name": "Ethambutol hydrochloride",
+          "total_items": 27,
+          "total_nic": 997.5
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501090K0",
+          "bnf_name": "Isoniazid",
+          "total_items": 6,
+          "total_nic": 1303.66
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501090K0",
+          "bnf_name": "Isoniazid",
+          "total_items": 14,
+          "total_nic": 2973.91
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501021G0",
+          "bnf_name": "Ceftriaxone sodium",
+          "total_items": 7,
+          "total_nic": 277.82
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501011J0",
+          "bnf_name": "Benzylpenicillin sodium (Penicillin G)",
+          "total_items": 4,
+          "total_nic": 166.43
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501070M0",
+          "bnf_name": "Fusidic acid",
+          "total_items": 1,
+          "total_nic": 24.22
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501070N0",
+          "bnf_name": "Sodium fusidate",
+          "total_items": 3,
+          "total_nic": 138.02
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501090S0",
+          "bnf_name": "Rifampicin combined preparations",
+          "total_items": 3,
+          "total_nic": 94.69
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501021B0",
+          "bnf_name": "Cefadroxil",
+          "total_items": 2,
+          "total_nic": 33.57
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501021D0",
+          "bnf_name": "Cefotaxime sodium",
+          "total_items": 1,
+          "total_nic": 42
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501100H0",
+          "bnf_name": "Dapsone",
+          "total_items": 1,
+          "total_nic": 6.25
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501080J0",
+          "bnf_name": "Sulfadiazine",
+          "total_items": 1,
+          "total_nic": 666.82
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501012G0",
+          "bnf_name": "Flucloxacillin sodium",
+          "total_items": 40143,
+          "total_nic": 125872.06
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501011P0",
+          "bnf_name": "Phenoxymethylpenicillin (Penicillin V)",
+          "total_items": 27856,
+          "total_nic": 103244.36
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501013B0",
+          "bnf_name": "Amoxicillin",
+          "total_items": 129028,
+          "total_nic": 197567.41
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501060D0",
+          "bnf_name": "Clindamycin hydrochloride",
+          "total_items": 883,
+          "total_nic": 6804.38
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501013B0",
+          "bnf_name": "Amoxicillin",
+          "total_items": 159072,
+          "total_nic": 240580.61
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501130R0",
+          "bnf_name": "Nitrofurantoin",
+          "total_items": 65398,
+          "total_nic": 524830.85
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501050A0",
+          "bnf_name": "Azithromycin",
+          "total_items": 13893,
+          "total_nic": 90004.92
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501015P0",
+          "bnf_name": "Pivmecillinam hydrochloride",
+          "total_items": 3828,
+          "total_nic": 33170.04
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501070X0",
+          "bnf_name": "Rifaximin",
+          "total_items": 3091,
+          "total_nic": 447677.82
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501130H0",
+          "bnf_name": "Methenamine hippurate",
+          "total_items": 6456,
+          "total_nic": 112381.44
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501030I0",
+          "bnf_name": "Doxycycline hyclate",
+          "total_items": 66377,
+          "total_nic": 82623.56
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501011P0",
+          "bnf_name": "Phenoxymethylpenicillin (Penicillin V)",
+          "total_items": 31073,
+          "total_nic": 110507.25
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501030T0",
+          "bnf_name": "Oxytetracycline",
+          "total_items": 3002,
+          "total_nic": 174154.96
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501012G0",
+          "bnf_name": "Flucloxacillin sodium",
+          "total_items": 35496,
+          "total_nic": 110053.35
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501080D0",
+          "bnf_name": "Co-trimoxazole(Trimethoprim/sulfamethoxazole)",
+          "total_items": 3278,
+          "total_nic": 11124.93
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501030P0",
+          "bnf_name": "Minocycline hydrochloride",
+          "total_items": 91,
+          "total_nic": 1529.63
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501070AC",
+          "bnf_name": "Fidaxomicin",
+          "total_items": 14,
+          "total_nic": 18900
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501021M0",
+          "bnf_name": "Cefradine",
+          "total_items": 111,
+          "total_nic": 3369.01
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501070AC",
+          "bnf_name": "Fidaxomicin",
+          "total_items": 8,
+          "total_nic": 10800
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501090R0",
+          "bnf_name": "Rifampicin",
+          "total_items": 85,
+          "total_nic": 4584.97
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501030V0",
+          "bnf_name": "Tetracycline",
+          "total_items": 92,
+          "total_nic": 7408.35
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501022B0",
+          "bnf_name": "Ertapenem sodium",
+          "total_items": 2,
+          "total_nic": 316.5
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501021K0",
+          "bnf_name": "Cefuroxime axetil",
+          "total_items": 14,
+          "total_nic": 169.19
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501090S0",
+          "bnf_name": "Rifampicin combined preparations",
+          "total_items": 2,
+          "total_nic": 128.34
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501130R0",
+          "bnf_name": "Nitrofurantoin",
+          "total_items": 292,
+          "total_nic": 2691.47
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501090K0",
+          "bnf_name": "Isoniazid",
+          "total_items": 16,
+          "total_nic": 3004.4
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501021B0",
+          "bnf_name": "Cefadroxil",
+          "total_items": 1,
+          "total_nic": 67.14
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501090Q0",
+          "bnf_name": "Rifabutin",
+          "total_items": 2,
+          "total_nic": 120.5
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501070T0",
+          "bnf_name": "Teicoplanin",
+          "total_items": 5,
+          "total_nic": 377.78
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501090Q0",
+          "bnf_name": "Rifabutin",
+          "total_items": 2,
+          "total_nic": 349.47
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501012G0",
+          "bnf_name": "Flucloxacillin sodium",
+          "total_items": 28503,
+          "total_nic": 89303.97
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501080W0",
+          "bnf_name": "Trimethoprim",
+          "total_items": 17969,
+          "total_nic": 31318.2
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501015P0",
+          "bnf_name": "Pivmecillinam hydrochloride",
+          "total_items": 5409,
+          "total_nic": 48082.68
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501050H0",
+          "bnf_name": "Erythromycin ethylsuccinate",
+          "total_items": 2831,
+          "total_nic": 50488.85
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501130R0",
+          "bnf_name": "Nitrofurantoin",
+          "total_items": 50447,
+          "total_nic": 402889.22
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501030I0",
+          "bnf_name": "Doxycycline hyclate",
+          "total_items": 74419,
+          "total_nic": 90018.23
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501030I0",
+          "bnf_name": "Doxycycline hyclate",
+          "total_items": 101797,
+          "total_nic": 124404.97
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501012G0",
+          "bnf_name": "Flucloxacillin sodium",
+          "total_items": 50042,
+          "total_nic": 164863.37
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501110C0",
+          "bnf_name": "Metronidazole",
+          "total_items": 5459,
+          "total_nic": 16943.42
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501030T0",
+          "bnf_name": "Oxytetracycline",
+          "total_items": 1308,
+          "total_nic": 65186.56
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501030P0",
+          "bnf_name": "Minocycline hydrochloride",
+          "total_items": 72,
+          "total_nic": 1023.03
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501070AE",
+          "bnf_name": "Fosfomycin trometamol",
+          "total_items": 1963,
+          "total_nic": 13010.22
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501100H0",
+          "bnf_name": "Dapsone",
+          "total_items": 306,
+          "total_nic": 3410.18
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501030F0",
+          "bnf_name": "Demeclocycline hydrochloride",
+          "total_items": 38,
+          "total_nic": 27636.84
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501050N0",
+          "bnf_name": "Erythromycin stearate",
+          "total_items": 34,
+          "total_nic": 687.56
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501013E0",
+          "bnf_name": "Ampicillin",
+          "total_items": 1,
+          "total_nic": 35.97
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501070T0",
+          "bnf_name": "Teicoplanin",
+          "total_items": 24,
+          "total_nic": 909.62
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501090R0",
+          "bnf_name": "Rifampicin",
+          "total_items": 109,
+          "total_nic": 4953.96
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501021B0",
+          "bnf_name": "Cefadroxil",
+          "total_items": 4,
+          "total_nic": 129.8
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501090H0",
+          "bnf_name": "Ethambutol hydrochloride",
+          "total_items": 9,
+          "total_nic": 455
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501021H0",
+          "bnf_name": "Ceftazidime pentahydrate",
+          "total_items": 3,
+          "total_nic": 124.04
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501070F0",
+          "bnf_name": "Chloramphenicol",
+          "total_items": 1,
+          "total_nic": 351.87
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501050C0",
+          "bnf_name": "Erythromycin",
+          "total_items": 1682,
+          "total_nic": 31107.27
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501120L0",
+          "bnf_name": "Ciprofloxacin",
+          "total_items": 4309,
+          "total_nic": 12040.57
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501080W0",
+          "bnf_name": "Trimethoprim",
+          "total_items": 21729,
+          "total_nic": 39950.98
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501021L0",
+          "bnf_name": "Cefalexin",
+          "total_items": 6500,
+          "total_nic": 21502.47
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501130R0",
+          "bnf_name": "Nitrofurantoin",
+          "total_items": 40037,
+          "total_nic": 343517.06
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501013B0",
+          "bnf_name": "Amoxicillin",
+          "total_items": 103540,
+          "total_nic": 158567.54
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501050C0",
+          "bnf_name": "Erythromycin",
+          "total_items": 3645,
+          "total_nic": 55744.31
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501060D0",
+          "bnf_name": "Clindamycin hydrochloride",
+          "total_items": 929,
+          "total_nic": 9295.6
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501030P0",
+          "bnf_name": "Minocycline hydrochloride",
+          "total_items": 93,
+          "total_nic": 1727.46
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501021A0",
+          "bnf_name": "Cefaclor",
+          "total_items": 27,
+          "total_nic": 378.47
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501030V0",
+          "bnf_name": "Tetracycline",
+          "total_items": 161,
+          "total_nic": 13702.9
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501090K0",
+          "bnf_name": "Isoniazid",
+          "total_items": 155,
+          "total_nic": 16399.51
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501030F0",
+          "bnf_name": "Demeclocycline hydrochloride",
+          "total_items": 45,
+          "total_nic": 32471.48
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501070U0",
+          "bnf_name": "Vancomycin hydrochloride",
+          "total_items": 54,
+          "total_nic": 12189.73
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501030P0",
+          "bnf_name": "Minocycline hydrochloride",
+          "total_items": 133,
+          "total_nic": 1644.66
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501060D0",
+          "bnf_name": "Clindamycin hydrochloride",
+          "total_items": 6,
+          "total_nic": 105.71
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501021C0",
+          "bnf_name": "Cefixime",
+          "total_items": 12,
+          "total_nic": 510.3
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501021G0",
+          "bnf_name": "Ceftriaxone sodium",
+          "total_items": 3,
+          "total_nic": 76.7
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501012H0",
+          "bnf_name": "Flucloxacillin magnesium",
+          "total_items": 1,
+          "total_nic": 9.08
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501011J0",
+          "bnf_name": "Benzylpenicillin sodium (Penicillin G)",
+          "total_items": 1,
+          "total_nic": 3.01
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501015P0",
+          "bnf_name": "Pivmecillinam hydrochloride",
+          "total_items": 5599,
+          "total_nic": 50155.74
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501013B0",
+          "bnf_name": "Amoxicillin",
+          "total_items": 135093,
+          "total_nic": 201927.7
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501110C0",
+          "bnf_name": "Metronidazole",
+          "total_items": 6352,
+          "total_nic": 17523.43
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501070U0",
+          "bnf_name": "Vancomycin hydrochloride",
+          "total_items": 81,
+          "total_nic": 22410.67
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501050A0",
+          "bnf_name": "Azithromycin",
+          "total_items": 10427,
+          "total_nic": 72931.27
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501060D0",
+          "bnf_name": "Clindamycin hydrochloride",
+          "total_items": 803,
+          "total_nic": 7919.41
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501090R0",
+          "bnf_name": "Rifampicin",
+          "total_items": 172,
+          "total_nic": 8729.1
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501100H0",
+          "bnf_name": "Dapsone",
+          "total_items": 144,
+          "total_nic": 1869.86
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501050N0",
+          "bnf_name": "Erythromycin stearate",
+          "total_items": 41,
+          "total_nic": 615.89
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501030Z0",
+          "bnf_name": "Doxycycline monohydrate",
+          "total_items": 714,
+          "total_nic": 10051.56
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501120P0",
+          "bnf_name": "Ofloxacin",
+          "total_items": 727,
+          "total_nic": 29036.45
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501060D0",
+          "bnf_name": "Clindamycin hydrochloride",
+          "total_items": 410,
+          "total_nic": 3690.18
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501021K0",
+          "bnf_name": "Cefuroxime axetil",
+          "total_items": 38,
+          "total_nic": 866.04
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501090H0",
+          "bnf_name": "Ethambutol hydrochloride",
+          "total_items": 45,
+          "total_nic": 1844.64
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501120Y0",
+          "bnf_name": "Moxifloxacin",
+          "total_items": 46,
+          "total_nic": 1516.63
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501070AC",
+          "bnf_name": "Fidaxomicin",
+          "total_items": 13,
+          "total_nic": 16875
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501040H0",
+          "bnf_name": "Gentamicin sulfate",
+          "total_items": 14,
+          "total_nic": 576.62
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501021H0",
+          "bnf_name": "Ceftazidime pentahydrate",
+          "total_items": 12,
+          "total_nic": 2054.69
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501040U0",
+          "bnf_name": "Tobramycin",
+          "total_items": 6,
+          "total_nic": 8309
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501011J0",
+          "bnf_name": "Benzylpenicillin sodium (Penicillin G)",
+          "total_items": 5,
+          "total_nic": 21.04
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501070T0",
+          "bnf_name": "Teicoplanin",
+          "total_items": 2,
+          "total_nic": 43.92
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501070N0",
+          "bnf_name": "Sodium fusidate",
+          "total_items": 13,
+          "total_nic": 537.8
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501070T0",
+          "bnf_name": "Teicoplanin",
+          "total_items": 2,
+          "total_nic": 235.8
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501130H0",
+          "bnf_name": "Methenamine hippurate",
+          "total_items": 8150,
+          "total_nic": 142665.88
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501050B0",
+          "bnf_name": "Clarithromycin",
+          "total_items": 24788,
+          "total_nic": 113141.41
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501021L0",
+          "bnf_name": "Cefalexin",
+          "total_items": 11097,
+          "total_nic": 33526.1
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501050B0",
+          "bnf_name": "Clarithromycin",
+          "total_items": 28944,
+          "total_nic": 126942.12
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501050A0",
+          "bnf_name": "Azithromycin",
+          "total_items": 13041,
+          "total_nic": 79033.77
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501030L0",
+          "bnf_name": "Lymecycline",
+          "total_items": 7108,
+          "total_nic": 47675.55
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501120L0",
+          "bnf_name": "Ciprofloxacin",
+          "total_items": 2567,
+          "total_nic": 7444.43
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501120X0",
+          "bnf_name": "Levofloxacin",
+          "total_items": 399,
+          "total_nic": 5702.84
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501050B0",
+          "bnf_name": "Clarithromycin",
+          "total_items": 26904,
+          "total_nic": 120839.82
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501050C0",
+          "bnf_name": "Erythromycin",
+          "total_items": 3152,
+          "total_nic": 58586.22
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501070AE",
+          "bnf_name": "Fosfomycin trometamol",
+          "total_items": 2011,
+          "total_nic": 15790.14
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501120P0",
+          "bnf_name": "Ofloxacin",
+          "total_items": 843,
+          "total_nic": 34158.75
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501021K0",
+          "bnf_name": "Cefuroxime axetil",
+          "total_items": 27,
+          "total_nic": 633.75
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501030V0",
+          "bnf_name": "Tetracycline",
+          "total_items": 276,
+          "total_nic": 16025.67
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501021M0",
+          "bnf_name": "Cefradine",
+          "total_items": 71,
+          "total_nic": 2094.75
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501030F0",
+          "bnf_name": "Demeclocycline hydrochloride",
+          "total_items": 46,
+          "total_nic": 23161.57
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501090K0",
+          "bnf_name": "Isoniazid",
+          "total_items": 5,
+          "total_nic": 1351.98
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501090H0",
+          "bnf_name": "Ethambutol hydrochloride",
+          "total_items": 14,
+          "total_nic": 652.86
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501070N0",
+          "bnf_name": "Sodium fusidate",
+          "total_items": 4,
+          "total_nic": 272.74
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501011J0",
+          "bnf_name": "Benzylpenicillin sodium (Penicillin G)",
+          "total_items": 4,
+          "total_nic": 21.03
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501070W0",
+          "bnf_name": "Linezolid",
+          "total_items": 13,
+          "total_nic": 7579.26
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501030L0",
+          "bnf_name": "Lymecycline",
+          "total_items": 17,
+          "total_nic": 165.43
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501021B0",
+          "bnf_name": "Cefadroxil",
+          "total_items": 5,
+          "total_nic": 434.18
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501030T0",
+          "bnf_name": "Oxytetracycline",
+          "total_items": 1,
+          "total_nic": 34.36
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501080J0",
+          "bnf_name": "Sulfadiazine",
+          "total_items": 1,
+          "total_nic": 395.42
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501021G0",
+          "bnf_name": "Ceftriaxone sodium",
+          "total_items": 24,
+          "total_nic": 1389.88
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501021H0",
+          "bnf_name": "Ceftazidime pentahydrate",
+          "total_items": 1,
+          "total_nic": 20.85
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501013K0",
+          "bnf_name": "Co-amoxiclav (Amoxicillin/clavulanic acid)",
+          "total_items": 10074,
+          "total_nic": 34233.82
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501050B0",
+          "bnf_name": "Clarithromycin",
+          "total_items": 34278,
+          "total_nic": 153614.26
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501011P0",
+          "bnf_name": "Phenoxymethylpenicillin (Penicillin V)",
+          "total_items": 34056,
+          "total_nic": 109895.1
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501050H0",
+          "bnf_name": "Erythromycin ethylsuccinate",
+          "total_items": 1800,
+          "total_nic": 31378.59
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501013K0",
+          "bnf_name": "Co-amoxiclav (Amoxicillin/clavulanic acid)",
+          "total_items": 13731,
+          "total_nic": 48370.95
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501120L0",
+          "bnf_name": "Ciprofloxacin",
+          "total_items": 5148,
+          "total_nic": 15611.94
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501120L0",
+          "bnf_name": "Ciprofloxacin",
+          "total_items": 4232,
+          "total_nic": 13425.71
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501130H0",
+          "bnf_name": "Methenamine hippurate",
+          "total_items": 7768,
+          "total_nic": 141211.09
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501090K0",
+          "bnf_name": "Isoniazid",
+          "total_items": 42,
+          "total_nic": 8600.07
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501080D0",
+          "bnf_name": "Co-trimoxazole(Trimethoprim/sulfamethoxazole)",
+          "total_items": 4418,
+          "total_nic": 19362.67
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501070AE",
+          "bnf_name": "Fosfomycin trometamol",
+          "total_items": 4483,
+          "total_nic": 31390.74
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501015P0",
+          "bnf_name": "Pivmecillinam hydrochloride",
+          "total_items": 2394,
+          "total_nic": 21120.48
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501030Z0",
+          "bnf_name": "Doxycycline monohydrate",
+          "total_items": 596,
+          "total_nic": 8973.39
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501021M0",
+          "bnf_name": "Cefradine",
+          "total_items": 148,
+          "total_nic": 4487.14
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501030V0",
+          "bnf_name": "Tetracycline",
+          "total_items": 226,
+          "total_nic": 16576.43
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501050N0",
+          "bnf_name": "Erythromycin stearate",
+          "total_items": 72,
+          "total_nic": 923.47
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501100H0",
+          "bnf_name": "Dapsone",
+          "total_items": 186,
+          "total_nic": 1720.49
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501021A0",
+          "bnf_name": "Cefaclor",
+          "total_items": 60,
+          "total_nic": 958.35
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501070AC",
+          "bnf_name": "Fidaxomicin",
+          "total_items": 29,
+          "total_nic": 37800
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501040U0",
+          "bnf_name": "Tobramycin",
+          "total_items": 12,
+          "total_nic": 9092.28
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501012G0",
+          "bnf_name": "Flucloxacillin sodium",
+          "total_items": 329,
+          "total_nic": 1037.04
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501040U0",
+          "bnf_name": "Tobramycin",
+          "total_items": 13,
+          "total_nic": 10040.76
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501021K0",
+          "bnf_name": "Cefuroxime axetil",
+          "total_items": 9,
+          "total_nic": 252.48
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501090S0",
+          "bnf_name": "Rifampicin combined preparations",
+          "total_items": 3,
+          "total_nic": 68.87
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501090H0",
+          "bnf_name": "Ethambutol hydrochloride",
+          "total_items": 13,
+          "total_nic": 608.04
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501120Y0",
+          "bnf_name": "Moxifloxacin",
+          "total_items": 13,
+          "total_nic": 259.39
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501040U0",
+          "bnf_name": "Tobramycin",
+          "total_items": 1,
+          "total_nic": 1187
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501070I0",
+          "bnf_name": "Colistimethate sodium",
+          "total_items": 226,
+          "total_nic": 38523.12
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501080D0",
+          "bnf_name": "Co-trimoxazole(Trimethoprim/sulfamethoxazole)",
+          "total_items": 3275,
+          "total_nic": 9802.63
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501050A0",
+          "bnf_name": "Azithromycin",
+          "total_items": 5347,
+          "total_nic": 33757.34
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501030I0",
+          "bnf_name": "Doxycycline hyclate",
+          "total_items": 41480,
+          "total_nic": 57286.34
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501120L0",
+          "bnf_name": "Ciprofloxacin",
+          "total_items": 2886,
+          "total_nic": 8837.3
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501130H0",
+          "bnf_name": "Methenamine hippurate",
+          "total_items": 4569,
+          "total_nic": 74838.69
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501090R0",
+          "bnf_name": "Rifampicin",
+          "total_items": 161,
+          "total_nic": 9060.93
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501050C0",
+          "bnf_name": "Erythromycin",
+          "total_items": 2043,
+          "total_nic": 43523.91
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501030I0",
+          "bnf_name": "Doxycycline hyclate",
+          "total_items": 61904,
+          "total_nic": 71842.24
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501070I0",
+          "bnf_name": "Colistimethate sodium",
+          "total_items": 331,
+          "total_nic": 67483.6
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501021A0",
+          "bnf_name": "Cefaclor",
+          "total_items": 35,
+          "total_nic": 533.64
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501021C0",
+          "bnf_name": "Cefixime",
+          "total_items": 10,
+          "total_nic": 735.21
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501040U0",
+          "bnf_name": "Tobramycin",
+          "total_items": 3,
+          "total_nic": 4164
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501021C0",
+          "bnf_name": "Cefixime",
+          "total_items": 7,
+          "total_nic": 332.64
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501120Y0",
+          "bnf_name": "Moxifloxacin",
+          "total_items": 56,
+          "total_nic": 1646.35
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501021G0",
+          "bnf_name": "Ceftriaxone sodium",
+          "total_items": 19,
+          "total_nic": 1619.56
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501030Z0",
+          "bnf_name": "Doxycycline monohydrate",
+          "total_items": 1,
+          "total_nic": 4.91
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501080V0",
+          "bnf_name": "Sulfapyridine",
+          "total_items": 1,
+          "total_nic": 1023.6
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501040U0",
+          "bnf_name": "Tobramycin",
+          "total_items": 2,
+          "total_nic": 1436.6
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501011J0",
+          "bnf_name": "Benzylpenicillin sodium (Penicillin G)",
+          "total_items": 3,
+          "total_nic": 10.38
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501100C0",
+          "bnf_name": "Clofazimine",
+          "total_items": 3,
+          "total_nic": 1896.66
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501070U0",
+          "bnf_name": "Vancomycin hydrochloride",
+          "total_items": 2,
+          "total_nic": 365.74
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501014S0",
+          "bnf_name": "Piperacillin sodium/tazobactam sodium",
+          "total_items": 1,
+          "total_nic": 1323
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501030L0",
+          "bnf_name": "Lymecycline",
+          "total_items": 13811,
+          "total_nic": 86507.46
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501050H0",
+          "bnf_name": "Erythromycin ethylsuccinate",
+          "total_items": 433,
+          "total_nic": 9494.7
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501011P0",
+          "bnf_name": "Phenoxymethylpenicillin (Penicillin V)",
+          "total_items": 28555,
+          "total_nic": 90091.17
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501050C0",
+          "bnf_name": "Erythromycin",
+          "total_items": 4688,
+          "total_nic": 82734.85
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501080D0",
+          "bnf_name": "Co-trimoxazole(Trimethoprim/sulfamethoxazole)",
+          "total_items": 5017,
+          "total_nic": 22535.67
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501030T0",
+          "bnf_name": "Oxytetracycline",
+          "total_items": 2886,
+          "total_nic": 176212.46
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501030T0",
+          "bnf_name": "Oxytetracycline",
+          "total_items": 1775,
+          "total_nic": 116321.78
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501050B0",
+          "bnf_name": "Clarithromycin",
+          "total_items": 15513,
+          "total_nic": 71082.4
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501120L0",
+          "bnf_name": "Ciprofloxacin",
+          "total_items": 2966,
+          "total_nic": 10654.94
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501120L0",
+          "bnf_name": "Ciprofloxacin",
+          "total_items": 3360,
+          "total_nic": 10555.46
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501050N0",
+          "bnf_name": "Erythromycin stearate",
+          "total_items": 122,
+          "total_nic": 1608.69
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501070I0",
+          "bnf_name": "Colistimethate sodium",
+          "total_items": 178,
+          "total_nic": 36270.48
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501100H0",
+          "bnf_name": "Dapsone",
+          "total_items": 294,
+          "total_nic": 2869.99
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501070W0",
+          "bnf_name": "Linezolid",
+          "total_items": 37,
+          "total_nic": 18181.53
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501040H0",
+          "bnf_name": "Gentamicin sulfate",
+          "total_items": 43,
+          "total_nic": 1883.73
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501120Y0",
+          "bnf_name": "Moxifloxacin",
+          "total_items": 44,
+          "total_nic": 1193.51
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501070W0",
+          "bnf_name": "Linezolid",
+          "total_items": 9,
+          "total_nic": 4242.51
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501090H0",
+          "bnf_name": "Ethambutol hydrochloride",
+          "total_items": 99,
+          "total_nic": 846.3
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501070U0",
+          "bnf_name": "Vancomycin hydrochloride",
+          "total_items": 75,
+          "total_nic": 16299.4
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501021C0",
+          "bnf_name": "Cefixime",
+          "total_items": 7,
+          "total_nic": 154.98
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501040H0",
+          "bnf_name": "Gentamicin sulfate",
+          "total_items": 17,
+          "total_nic": 240.69
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501040H0",
+          "bnf_name": "Gentamicin sulfate",
+          "total_items": 43,
+          "total_nic": 2547.01
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501011J0",
+          "bnf_name": "Benzylpenicillin sodium (Penicillin G)",
+          "total_items": 3,
+          "total_nic": 13.39
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501030F0",
+          "bnf_name": "Demeclocycline hydrochloride",
+          "total_items": 56,
+          "total_nic": 35189.32
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501080J0",
+          "bnf_name": "Sulfadiazine",
+          "total_items": 3,
+          "total_nic": 2174.81
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501015P0",
+          "bnf_name": "Pivmecillinam hydrochloride",
+          "total_items": 11,
+          "total_nic": 90.18
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501070N0",
+          "bnf_name": "Sodium fusidate",
+          "total_items": 3,
+          "total_nic": 233.16
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501013B0",
+          "bnf_name": "Amoxicillin",
+          "total_items": 61621,
+          "total_nic": 94003.55
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501030I0",
+          "bnf_name": "Doxycycline hyclate",
+          "total_items": 68402,
+          "total_nic": 75588.28
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501050C0",
+          "bnf_name": "Erythromycin",
+          "total_items": 3920,
+          "total_nic": 75374.05
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501130H0",
+          "bnf_name": "Methenamine hippurate",
+          "total_items": 14082,
+          "total_nic": 186257.83
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501030Z0",
+          "bnf_name": "Doxycycline monohydrate",
+          "total_items": 983,
+          "total_nic": 13809.45
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501015P0",
+          "bnf_name": "Pivmecillinam hydrochloride",
+          "total_items": 5987,
+          "total_nic": 54378
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501130R0",
+          "bnf_name": "Nitrofurantoin",
+          "total_items": 52593,
+          "total_nic": 416511.3
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501021M0",
+          "bnf_name": "Cefradine",
+          "total_items": 275,
+          "total_nic": 9446.9
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501021C0",
+          "bnf_name": "Cefixime",
+          "total_items": 6,
+          "total_nic": 154.98
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501030V0",
+          "bnf_name": "Tetracycline",
+          "total_items": 204,
+          "total_nic": 14555.79
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501070X0",
+          "bnf_name": "Rifaximin",
+          "total_items": 883,
+          "total_nic": 170590.92
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501120X0",
+          "bnf_name": "Levofloxacin",
+          "total_items": 242,
+          "total_nic": 3343.29
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501070AE",
+          "bnf_name": "Fosfomycin trometamol",
+          "total_items": 1069,
+          "total_nic": 7484.4
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501030Z0",
+          "bnf_name": "Doxycycline monohydrate",
+          "total_items": 508,
+          "total_nic": 6980.49
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501120X0",
+          "bnf_name": "Levofloxacin",
+          "total_items": 338,
+          "total_nic": 5484.46
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501050N0",
+          "bnf_name": "Erythromycin stearate",
+          "total_items": 40,
+          "total_nic": 681.02
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501120P0",
+          "bnf_name": "Ofloxacin",
+          "total_items": 3,
+          "total_nic": 177.23
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501090Q0",
+          "bnf_name": "Rifabutin",
+          "total_items": 2,
+          "total_nic": 241.01
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501090Q0",
+          "bnf_name": "Rifabutin",
+          "total_items": 2,
+          "total_nic": 265.11
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501070AC",
+          "bnf_name": "Fidaxomicin",
+          "total_items": 5,
+          "total_nic": 6750
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501021G0",
+          "bnf_name": "Ceftriaxone sodium",
+          "total_items": 2,
+          "total_nic": 19.16
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501012G0",
+          "bnf_name": "Flucloxacillin sodium",
+          "total_items": 61563,
+          "total_nic": 199274.32
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501021L0",
+          "bnf_name": "Cefalexin",
+          "total_items": 12277,
+          "total_nic": 38554.76
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501080W0",
+          "bnf_name": "Trimethoprim",
+          "total_items": 19476,
+          "total_nic": 35779.18
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501050H0",
+          "bnf_name": "Erythromycin ethylsuccinate",
+          "total_items": 1338,
+          "total_nic": 25925.5
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501070I0",
+          "bnf_name": "Colistimethate sodium",
+          "total_items": 700,
+          "total_nic": 127348.32
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501120Y0",
+          "bnf_name": "Moxifloxacin",
+          "total_items": 108,
+          "total_nic": 2009.08
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501070I0",
+          "bnf_name": "Colistimethate sodium",
+          "total_items": 381,
+          "total_nic": 72256.68
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501060D0",
+          "bnf_name": "Clindamycin hydrochloride",
+          "total_items": 494,
+          "total_nic": 4861.86
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501070U0",
+          "bnf_name": "Vancomycin hydrochloride",
+          "total_items": 90,
+          "total_nic": 22023.94
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501100H0",
+          "bnf_name": "Dapsone",
+          "total_items": 408,
+          "total_nic": 3407.34
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501050C0",
+          "bnf_name": "Erythromycin",
+          "total_items": 17,
+          "total_nic": 261.41
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501030I0",
+          "bnf_name": "Doxycycline hyclate",
+          "total_items": 425,
+          "total_nic": 570.67
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501040H0",
+          "bnf_name": "Gentamicin sulfate",
+          "total_items": 41,
+          "total_nic": 2588.27
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501021A0",
+          "bnf_name": "Cefaclor",
+          "total_items": 66,
+          "total_nic": 967.48
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501070W0",
+          "bnf_name": "Linezolid",
+          "total_items": 26,
+          "total_nic": 17230.63
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501090Q0",
+          "bnf_name": "Rifabutin",
+          "total_items": 6,
+          "total_nic": 759.19
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501040H0",
+          "bnf_name": "Gentamicin sulfate",
+          "total_items": 13,
+          "total_nic": 334.44
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501070W0",
+          "bnf_name": "Linezolid",
+          "total_items": 7,
+          "total_nic": 2715.7
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501013E0",
+          "bnf_name": "Ampicillin",
+          "total_items": 2,
+          "total_nic": 59.95
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501120P0",
+          "bnf_name": "Ofloxacin",
+          "total_items": 448,
+          "total_nic": 19061.03
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501050A0",
+          "bnf_name": "Azithromycin",
+          "total_items": 8432,
+          "total_nic": 54104.87
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501021L0",
+          "bnf_name": "Cefalexin",
+          "total_items": 12048,
+          "total_nic": 38590.61
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501080W0",
+          "bnf_name": "Trimethoprim",
+          "total_items": 23743,
+          "total_nic": 41435.67
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501110C0",
+          "bnf_name": "Metronidazole",
+          "total_items": 8154,
+          "total_nic": 20205.07
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501050H0",
+          "bnf_name": "Erythromycin ethylsuccinate",
+          "total_items": 1620,
+          "total_nic": 29811.39
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501130H0",
+          "bnf_name": "Methenamine hippurate",
+          "total_items": 6133,
+          "total_nic": 94413.25
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501013K0",
+          "bnf_name": "Co-amoxiclav (Amoxicillin/clavulanic acid)",
+          "total_items": 23339,
+          "total_nic": 81294.04
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501070AE",
+          "bnf_name": "Fosfomycin trometamol",
+          "total_items": 1954,
+          "total_nic": 13384.44
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501070I0",
+          "bnf_name": "Colistimethate sodium",
+          "total_items": 302,
+          "total_nic": 61779.12
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501013K0",
+          "bnf_name": "Co-amoxiclav (Amoxicillin/clavulanic acid)",
+          "total_items": 16188,
+          "total_nic": 55861.97
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501021K0",
+          "bnf_name": "Cefuroxime axetil",
+          "total_items": 20,
+          "total_nic": 428.19
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501100H0",
+          "bnf_name": "Dapsone",
+          "total_items": 283,
+          "total_nic": 4344.21
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501030T0",
+          "bnf_name": "Oxytetracycline",
+          "total_items": 1667,
+          "total_nic": 110367.8
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501030F0",
+          "bnf_name": "Demeclocycline hydrochloride",
+          "total_items": 87,
+          "total_nic": 48754.92
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501080W0",
+          "bnf_name": "Trimethoprim",
+          "total_items": 131,
+          "total_nic": 317.41
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501030V0",
+          "bnf_name": "Tetracycline",
+          "total_items": 238,
+          "total_nic": 17242.72
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501050B0",
+          "bnf_name": "Clarithromycin",
+          "total_items": 227,
+          "total_nic": 985.7
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501050N0",
+          "bnf_name": "Erythromycin stearate",
+          "total_items": 92,
+          "total_nic": 1407.92
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501120L0",
+          "bnf_name": "Ciprofloxacin",
+          "total_items": 17,
+          "total_nic": 20.38
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501090S0",
+          "bnf_name": "Rifampicin combined preparations",
+          "total_items": 8,
+          "total_nic": 219.62
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501021M0",
+          "bnf_name": "Cefradine",
+          "total_items": 121,
+          "total_nic": 12566.33
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501070N0",
+          "bnf_name": "Sodium fusidate",
+          "total_items": 14,
+          "total_nic": 672.51
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501021A0",
+          "bnf_name": "Cefaclor",
+          "total_items": 22,
+          "total_nic": 343.9
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501050H0",
+          "bnf_name": "Erythromycin ethylsuccinate",
+          "total_items": 9,
+          "total_nic": 151.53
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501021D0",
+          "bnf_name": "Cefotaxime sodium",
+          "total_items": 1,
+          "total_nic": 3.5
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501021G0",
+          "bnf_name": "Ceftriaxone sodium",
+          "total_items": 4,
+          "total_nic": 239.56
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501070F0",
+          "bnf_name": "Chloramphenicol",
+          "total_items": 2,
+          "total_nic": 1407.46
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501030T0",
+          "bnf_name": "Oxytetracycline",
+          "total_items": 1464,
+          "total_nic": 87505.02
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501130R0",
+          "bnf_name": "Nitrofurantoin",
+          "total_items": 40273,
+          "total_nic": 288486.31
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501013B0",
+          "bnf_name": "Amoxicillin",
+          "total_items": 114651,
+          "total_nic": 169518.78
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501021L0",
+          "bnf_name": "Cefalexin",
+          "total_items": 9016,
+          "total_nic": 26766.24
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501030L0",
+          "bnf_name": "Lymecycline",
+          "total_items": 8056,
+          "total_nic": 65218.15
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501050N0",
+          "bnf_name": "Erythromycin stearate",
+          "total_items": 95,
+          "total_nic": 1029.92
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501070AE",
+          "bnf_name": "Fosfomycin trometamol",
+          "total_items": 1689,
+          "total_nic": 10337.22
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501070X0",
+          "bnf_name": "Rifaximin",
+          "total_items": 2004,
+          "total_nic": 380741.24
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501070AE",
+          "bnf_name": "Fosfomycin trometamol",
+          "total_items": 2238,
+          "total_nic": 16178.94
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501013B0",
+          "bnf_name": "Amoxicillin",
+          "total_items": 1242,
+          "total_nic": 1948.02
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501021M0",
+          "bnf_name": "Cefradine",
+          "total_items": 26,
+          "total_nic": 1013.11
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501110C0",
+          "bnf_name": "Metronidazole",
+          "total_items": 30,
+          "total_nic": 269.98
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501013K0",
+          "bnf_name": "Co-amoxiclav (Amoxicillin/clavulanic acid)",
+          "total_items": 177,
+          "total_nic": 568.51
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501070AC",
+          "bnf_name": "Fidaxomicin",
+          "total_items": 17,
+          "total_nic": 23490
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501013C0",
+          "bnf_name": "Amoxicillin sodium",
+          "total_items": 1,
+          "total_nic": 1.92
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501021A0",
+          "bnf_name": "Cefaclor",
+          "total_items": 33,
+          "total_nic": 350.3
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501090S0",
+          "bnf_name": "Rifampicin combined preparations",
+          "total_items": 5,
+          "total_nic": 279.51
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501070F0",
+          "bnf_name": "Chloramphenicol",
+          "total_items": 1,
+          "total_nic": 377
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501070W0",
+          "bnf_name": "Linezolid",
+          "total_items": 11,
+          "total_nic": 8598.97
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501021A0",
+          "bnf_name": "Cefaclor",
+          "total_items": 21,
+          "total_nic": 309.22
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501040U0",
+          "bnf_name": "Tobramycin",
+          "total_items": 3,
+          "total_nic": 2849.44
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501014S0",
+          "bnf_name": "Piperacillin sodium/tazobactam sodium",
+          "total_items": 3,
+          "total_nic": 961.17
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501090N0",
+          "bnf_name": "Pyrazinamide",
+          "total_items": 1,
+          "total_nic": 204.31
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501011P0",
+          "bnf_name": "Phenoxymethylpenicillin (Penicillin V)",
+          "total_items": 28129,
+          "total_nic": 88322.27
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501013K0",
+          "bnf_name": "Co-amoxiclav (Amoxicillin/clavulanic acid)",
+          "total_items": 11276,
+          "total_nic": 39512.3
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501080W0",
+          "bnf_name": "Trimethoprim",
+          "total_items": 13541,
+          "total_nic": 24137.62
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501080W0",
+          "bnf_name": "Trimethoprim",
+          "total_items": 26877,
+          "total_nic": 47500.98
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501050A0",
+          "bnf_name": "Azithromycin",
+          "total_items": 20540,
+          "total_nic": 96006.32
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501110C0",
+          "bnf_name": "Metronidazole",
+          "total_items": 3521,
+          "total_nic": 11250.22
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501013B0",
+          "bnf_name": "Amoxicillin",
+          "total_items": 119482,
+          "total_nic": 171251
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501120P0",
+          "bnf_name": "Ofloxacin",
+          "total_items": 690,
+          "total_nic": 28253.77
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501012G0",
+          "bnf_name": "Flucloxacillin sodium",
+          "total_items": 43108,
+          "total_nic": 132610.42
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501130R0",
+          "bnf_name": "Nitrofurantoin",
+          "total_items": 40800,
+          "total_nic": 351050.11
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501012G0",
+          "bnf_name": "Flucloxacillin sodium",
+          "total_items": 34882,
+          "total_nic": 109455.14
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501021L0",
+          "bnf_name": "Cefalexin",
+          "total_items": 10851,
+          "total_nic": 32883.21
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501110C0",
+          "bnf_name": "Metronidazole",
+          "total_items": 6861,
+          "total_nic": 26962.78
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501120X0",
+          "bnf_name": "Levofloxacin",
+          "total_items": 334,
+          "total_nic": 4304.71
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501070U0",
+          "bnf_name": "Vancomycin hydrochloride",
+          "total_items": 167,
+          "total_nic": 37611.63
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501070X0",
+          "bnf_name": "Rifaximin",
+          "total_items": 1106,
+          "total_nic": 212934.61
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501100H0",
+          "bnf_name": "Dapsone",
+          "total_items": 266,
+          "total_nic": 2432.28
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501120P0",
+          "bnf_name": "Ofloxacin",
+          "total_items": 674,
+          "total_nic": 28359.56
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501060D0",
+          "bnf_name": "Clindamycin hydrochloride",
+          "total_items": 511,
+          "total_nic": 4685.95
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501060D0",
+          "bnf_name": "Clindamycin hydrochloride",
+          "total_items": 841,
+          "total_nic": 7748.42
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501070N0",
+          "bnf_name": "Sodium fusidate",
+          "total_items": 6,
+          "total_nic": 395.92
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501021K0",
+          "bnf_name": "Cefuroxime axetil",
+          "total_items": 25,
+          "total_nic": 402.12
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501030P0",
+          "bnf_name": "Minocycline hydrochloride",
+          "total_items": 120,
+          "total_nic": 2381.92
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501120X0",
+          "bnf_name": "Levofloxacin",
+          "total_items": 275,
+          "total_nic": 3959.6
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501030P0",
+          "bnf_name": "Minocycline hydrochloride",
+          "total_items": 116,
+          "total_nic": 1786.2
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501021C0",
+          "bnf_name": "Cefixime",
+          "total_items": 18,
+          "total_nic": 417.69
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501090K0",
+          "bnf_name": "Isoniazid",
+          "total_items": 55,
+          "total_nic": 12855.7
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501090H0",
+          "bnf_name": "Ethambutol hydrochloride",
+          "total_items": 21,
+          "total_nic": 459.28
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501070N0",
+          "bnf_name": "Sodium fusidate",
+          "total_items": 11,
+          "total_nic": 595
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501070W0",
+          "bnf_name": "Linezolid",
+          "total_items": 17,
+          "total_nic": 8435.03
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501021G0",
+          "bnf_name": "Ceftriaxone sodium",
+          "total_items": 1,
+          "total_nic": 9.58
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501011J0",
+          "bnf_name": "Benzylpenicillin sodium (Penicillin G)",
+          "total_items": 4,
+          "total_nic": 127.52
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501021J0",
+          "bnf_name": "Cefuroxime sodium",
+          "total_items": 2,
+          "total_nic": 408.58
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501021D0",
+          "bnf_name": "Cefotaxime sodium",
+          "total_items": 1,
+          "total_nic": 35
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501080J0",
+          "bnf_name": "Sulfadiazine",
+          "total_items": 1,
+          "total_nic": 1186.26
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501110C0",
+          "bnf_name": "Metronidazole",
+          "total_items": 5928,
+          "total_nic": 28582.95
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501080W0",
+          "bnf_name": "Trimethoprim",
+          "total_items": 13150,
+          "total_nic": 24317.41
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501015P0",
+          "bnf_name": "Pivmecillinam hydrochloride",
+          "total_items": 4850,
+          "total_nic": 44346.42
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501013K0",
+          "bnf_name": "Co-amoxiclav (Amoxicillin/clavulanic acid)",
+          "total_items": 17994,
+          "total_nic": 62035.92
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501013K0",
+          "bnf_name": "Co-amoxiclav (Amoxicillin/clavulanic acid)",
+          "total_items": 16816,
+          "total_nic": 58401.72
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501030L0",
+          "bnf_name": "Lymecycline",
+          "total_items": 11751,
+          "total_nic": 83599.48
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501120Y0",
+          "bnf_name": "Moxifloxacin",
+          "total_items": 22,
+          "total_nic": 758.3
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501120P0",
+          "bnf_name": "Ofloxacin",
+          "total_items": 609,
+          "total_nic": 24129.57
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501013C0",
+          "bnf_name": "Amoxicillin sodium",
+          "total_items": 1,
+          "total_nic": 57.6
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501120X0",
+          "bnf_name": "Levofloxacin",
+          "total_items": 556,
+          "total_nic": 8079.32
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501050H0",
+          "bnf_name": "Erythromycin ethylsuccinate",
+          "total_items": 2140,
+          "total_nic": 35493.84
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501080D0",
+          "bnf_name": "Co-trimoxazole(Trimethoprim/sulfamethoxazole)",
+          "total_items": 2612,
+          "total_nic": 8042.41
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501070X0",
+          "bnf_name": "Rifaximin",
+          "total_items": 974,
+          "total_nic": 202240.19
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501120X0",
+          "bnf_name": "Levofloxacin",
+          "total_items": 343,
+          "total_nic": 4847.16
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501030T0",
+          "bnf_name": "Oxytetracycline",
+          "total_items": 630,
+          "total_nic": 43302.87
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501021C0",
+          "bnf_name": "Cefixime",
+          "total_items": 6,
+          "total_nic": 190.89
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501090R0",
+          "bnf_name": "Rifampicin",
+          "total_items": 116,
+          "total_nic": 6225.03
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501030V0",
+          "bnf_name": "Tetracycline",
+          "total_items": 243,
+          "total_nic": 15353.35
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501070U0",
+          "bnf_name": "Vancomycin hydrochloride",
+          "total_items": 111,
+          "total_nic": 26189.82
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501100C0",
+          "bnf_name": "Clofazimine",
+          "total_items": 1,
+          "total_nic": 139.58
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501120Y0",
+          "bnf_name": "Moxifloxacin",
+          "total_items": 21,
+          "total_nic": 628.64
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501030F0",
+          "bnf_name": "Demeclocycline hydrochloride",
+          "total_items": 19,
+          "total_nic": 8535.06
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501070AE",
+          "bnf_name": "Fosfomycin trometamol",
+          "total_items": 7,
+          "total_nic": 43.74
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501021B0",
+          "bnf_name": "Cefadroxil",
+          "total_items": 17,
+          "total_nic": 322.25
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501022A0",
+          "bnf_name": "Meropenem",
+          "total_items": 3,
+          "total_nic": 968.54
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501130S0",
+          "bnf_name": "Fosfomycin calcium",
+          "total_items": 1,
+          "total_nic": 145.5
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501090Q0",
+          "bnf_name": "Rifabutin",
+          "total_items": 1,
+          "total_nic": 90.38
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501080D0",
+          "bnf_name": "Co-trimoxazole(Trimethoprim/sulfamethoxazole)",
+          "total_items": 2735,
+          "total_nic": 10384.99
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501030I0",
+          "bnf_name": "Doxycycline hyclate",
+          "total_items": 54294,
+          "total_nic": 60224.63
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501130R0",
+          "bnf_name": "Nitrofurantoin",
+          "total_items": 32584,
+          "total_nic": 242352.46
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501130H0",
+          "bnf_name": "Methenamine hippurate",
+          "total_items": 5891,
+          "total_nic": 96294.83
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501021L0",
+          "bnf_name": "Cefalexin",
+          "total_items": 14445,
+          "total_nic": 47556.5
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501070U0",
+          "bnf_name": "Vancomycin hydrochloride",
+          "total_items": 131,
+          "total_nic": 29048.74
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501070I0",
+          "bnf_name": "Colistimethate sodium",
+          "total_items": 533,
+          "total_nic": 93919.32
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501050B0",
+          "bnf_name": "Clarithromycin",
+          "total_items": 31419,
+          "total_nic": 141276.36
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501030L0",
+          "bnf_name": "Lymecycline",
+          "total_items": 12842,
+          "total_nic": 81162.38
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "MIDLANDS",
+          "bnf_code": "0501030Z0",
+          "bnf_name": "Doxycycline monohydrate",
+          "total_items": 1267,
+          "total_nic": 15383.99
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501030P0",
+          "bnf_name": "Minocycline hydrochloride",
+          "total_items": 69,
+          "total_nic": 998.23
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501120P0",
+          "bnf_name": "Ofloxacin",
+          "total_items": 328,
+          "total_nic": 14902.42
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH WEST",
+          "bnf_code": "0501030Z0",
+          "bnf_name": "Doxycycline monohydrate",
+          "total_items": 1113,
+          "total_nic": 14293.49
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501080D0",
+          "bnf_name": "Co-trimoxazole(Trimethoprim/sulfamethoxazole)",
+          "total_items": 3014,
+          "total_nic": 10876.43
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501030L0",
+          "bnf_name": "Lymecycline",
+          "total_items": 9469,
+          "total_nic": 52932.31
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501120X0",
+          "bnf_name": "Levofloxacin",
+          "total_items": 2,
+          "total_nic": 12.62
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501021M0",
+          "bnf_name": "Cefradine",
+          "total_items": 103,
+          "total_nic": 3918.33
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH WEST",
+          "bnf_code": "0501013C0",
+          "bnf_name": "Amoxicillin sodium",
+          "total_items": 1,
+          "total_nic": 22.5
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501021L0",
+          "bnf_name": "Cefalexin",
+          "total_items": 94,
+          "total_nic": 292.11
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501090S0",
+          "bnf_name": "Rifampicin combined preparations",
+          "total_items": 35,
+          "total_nic": 853.2
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501080D0",
+          "bnf_name": "Co-trimoxazole(Trimethoprim/sulfamethoxazole)",
+          "total_items": 8,
+          "total_nic": 35.37
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501050A0",
+          "bnf_name": "Azithromycin",
+          "total_items": 23,
+          "total_nic": 141.02
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "EAST OF ENGLAND",
+          "bnf_code": "0501100C0",
+          "bnf_name": "Clofazimine",
+          "total_items": 1,
+          "total_nic": 229.6
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "LONDON",
+          "bnf_code": "0501080V0",
+          "bnf_name": "Sulfapyridine",
+          "total_items": 1,
+          "total_nic": 833
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501090R0",
+          "bnf_name": "Rifampicin",
+          "total_items": 1,
+          "total_nic": 65.11
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501030P0",
+          "bnf_name": "Minocycline hydrochloride",
+          "total_items": 2,
+          "total_nic": 62.39
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "UNIDENTIFIED",
+          "bnf_code": "0501130H0",
+          "bnf_name": "Methenamine hippurate",
+          "total_items": 2,
+          "total_nic": 32.18
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "NORTH EAST AND YORKSHIRE",
+          "bnf_code": "0501090Q0",
+          "bnf_name": "Rifabutin",
+          "total_items": 1,
+          "total_nic": 84.35
+        },
+        {
+          "YEAR_MONTH": 202501,
+          "REGIONAL_OFFICE_NAME": "SOUTH EAST",
+          "bnf_code": "0501070M0",
+          "bnf_name": "Fusidic acid",
+          "total_items": 1,
+          "total_nic": 24.22
+        }
+      ],
+      "fields": []
+    }
+  }
+}

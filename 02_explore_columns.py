@@ -1,7 +1,7 @@
 import requests
 
 url = "https://opendata.nhsbsa.net/api/3/action/datastore_search"
-params = {"resource_id": "EPD_SNOMED_202608", "limit": 1}
+params = {"resource_id": "EPD_SNOMED_202409", "limit": 1}
 
 response = requests.get(url, params=params, timeout=60)
 print("Status code:", response.status_code)
