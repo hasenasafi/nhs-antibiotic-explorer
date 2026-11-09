@@ -1,2 +1,4 @@
 .venv/
-data/
+data/*.duckdb
+.pytest_cache/
+__pycache__/

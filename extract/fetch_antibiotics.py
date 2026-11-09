@@ -91,4 +91,3 @@ for month in months_between(START_MONTH, END_MONTH):
     logging.info(f"{month}: saved {rows} rows to {path}")
     time.sleep(1) 
 
-    
