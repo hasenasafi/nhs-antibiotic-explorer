@@ -54,3 +54,14 @@ def test_no_negative_values(con):
 
 def test_only_antibiotics(con):
     assert query_one(con, f"SELECT COUNT(*) FROM {MART} WHERE bnf_code NOT LIKE '0501%'") == 0
+
+def test_broad_spectrum_one_row_per_region_month(con):
+    assert query_one(con, "SELECT COUNT(*) FROM mart_broad_spectrum_by_region") == 24 * 7
+
+
+def test_broad_spectrum_pct_is_valid(con):
+    sql = """
+    SELECT COUNT(*) FROM mart_broad_spectrum_by_region
+    WHERE broad_spectrum_pct IS NULL OR broad_spectrum_pct < 0 OR broad_spectrum_pct > 100
+    """
+    assert query_one(con, sql) == 0
