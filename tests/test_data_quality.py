@@ -20,8 +20,8 @@ def test_mart_has_rows(con):
     assert query_one(con, f"SELECT COUNT(*) FROM {MART}") > 0
 
 
-def test_has_24_months(con):
-    assert query_one(con, f"SELECT COUNT(DISTINCT month) FROM {MART}") == 24
+def test_has_36_months(con):
+    assert query_one(con, f"SELECT COUNT(DISTINCT month) FROM {MART}") == 36
 
 
 def test_has_7_regions(con):
