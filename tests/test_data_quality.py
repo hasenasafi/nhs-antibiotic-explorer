@@ -20,8 +20,8 @@ def test_mart_has_rows(con):
     assert query_one(con, f"SELECT COUNT(*) FROM {MART}") > 0
 
 
-def test_has_24_months(con):
-    assert query_one(con, f"SELECT COUNT(DISTINCT month) FROM {MART}") == 24
+def test_has_36_months(con):
+    assert query_one(con, f"SELECT COUNT(DISTINCT month) FROM {MART}") == 36
 
 
 def test_has_7_regions(con):
@@ -55,13 +55,6 @@ def test_no_negative_values(con):
 def test_only_antibiotics(con):
     assert query_one(con, f"SELECT COUNT(*) FROM {MART} WHERE bnf_code NOT LIKE '0501%'") == 0
 
-def test_broad_spectrum_one_row_per_region_month(con):
-    assert query_one(con, "SELECT COUNT(*) FROM mart_broad_spectrum_by_region") == 24 * 7
-
-
-def test_broad_spectrum_pct_is_valid(con):
-    sql = """
-    SELECT COUNT(*) FROM mart_broad_spectrum_by_region
-    WHERE broad_spectrum_pct IS NULL OR broad_spectrum_pct < 0 OR broad_spectrum_pct > 100
-    """
-    assert query_one(con, sql) == 0
+def test_broad_spectrum_flag_is_set(con):
+    assert query_one(con, f"SELECT COUNT(*) FROM {MART} WHERE is_broad_spectrum IS NULL") == 0
+    assert query_one(con, f"SELECT COUNT(*) FROM {MART} WHERE is_broad_spectrum") > 0

@@ -9,7 +9,7 @@ import requests
 SQL_URL = "https://opendata.nhsbsa.net/api/3/action/datastore_search_sql"
 SEARCH_URL = "https://opendata.nhsbsa.net/api/3/action/datastore_search"
 RAW_DIR = Path("data/raw")
-START_MONTH = "202409"
+START_MONTH = "202309"
 END_MONTH = "202608"
 MAX_ATTEMPTS = 3
 
