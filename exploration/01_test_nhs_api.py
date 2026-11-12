@@ -1,3 +1,9 @@
+# =============================================================================
+# EXPLORATION 1 (not part of the pipeline)
+# My first script: checks I can connect to the NHSBSA API and read the
+# dataset's details. It found 70 monthly files, from November 2020
+# (EPD_SNOMED_202011) to August 2026 (EPD_SNOMED_202608).
+# =============================================================================
 import requests
 
 url = "https://opendata.nhsbsa.net/api/3/action/package_show"

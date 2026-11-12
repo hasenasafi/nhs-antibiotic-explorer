@@ -1,3 +1,10 @@
+# =============================================================================
+# EXPLORATION 3 (not part of the pipeline)
+# Tests sending a SQL query to the API, filtering one month to antibiotics
+# (BNF codes starting 0501) and adding them up by region. This is where I
+# found the results are nested one level deeper than expected
+# (result -> result -> records).
+# =============================================================================
 import requests
 
 url = "https://opendata.nhsbsa.net/api/3/action/datastore_search_sql"

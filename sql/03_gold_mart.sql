@@ -7,7 +7,7 @@
 --
 -- It only keeps numbers that can be added up (items and cost). Percentages,
 -- like the broad-spectrum share, are worked out in Tableau from the totals,
--- so they're always calculated correctly (one dataset, as Archie suggested).
+-- so they're always calculated correctly .
 --
 -- What goes in:  stg_antibiotics (from silver)
 -- What comes out: mart_antibiotics_monthly, the table exported to Tableau
