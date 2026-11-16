@@ -13,8 +13,7 @@ WITH parsed AS (
         record ->> 'REGIONAL_OFFICE_NAME' AS region,
         record ->> 'bnf_code' AS bnf_code,
         record ->> 'bnf_name' AS bnf_name,
-        CAST(record ->> 'total_items' AS DOUBLE) AS items,
-        CAST(record ->> 'total_nic' AS DOUBLE) AS nic_gbp
+        CAST(record ->> 'total_items' AS DOUBLE) AS items
     FROM raw_antibiotics
 ),
 
@@ -34,7 +33,6 @@ SELECT
     bnf_code,
     bnf_name,
     CAST(items AS INTEGER) AS items,
-    ROUND(nic_gbp, 2) AS nic_gbp,
     pulled_at
 FROM latest
 WHERE pulled_at = latest_pull;
