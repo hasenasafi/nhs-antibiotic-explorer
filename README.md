@@ -7,6 +7,30 @@ An end-to-end data pipeline that extracts antibiotic prescribing data for Englan
 ![Dashboard: KPIs, which and where](docs/dashboard_top.png)
 ![Dashboard: when, and conclusion](docs/dashboard_bottom.png)
 
+## Findings
+
+**Nationally (Sep 2025 to Aug 2026, compared with Sep 2023 to Aug 2024):**
+- Total antibiotic items fell by **11%** (33.8M → 30.2M).
+- Broad-spectrum items fell by only **3%** (2.55M → 2.48M).
+- So the broad-spectrum share **rose from 7.6% to 8.2%**.
+
+**Which:** co-amoxiclav and cefalexin make up **86%** of broad-spectrum prescribing.
+
+**Where (Sep 2025 to Aug 2026):**
+
+| Region | Broad-spectrum share |
+|---|---|
+| East of England | 9.8% |
+| South East | 8.8% |
+| London | 8.5% |
+| South West | 8.3% |
+| Midlands | 8.2% |
+| North West | 7.5% |
+| North East and Yorkshire | 6.7% |
+
+**When:** the share peaks every August, but this is because total antibiotic prescribing falls in summer. The number of broad-spectrum prescriptions stays fairly steady all year, so stewardship shouldn't focus on one season alone.
+
+
 ## About me
 
 I'm a hospital pharmacist, who is keen to move into data engineering. Antimicrobial resistance is something I see the impact of in practice, so I wanted my first pipeline to answer a question I care about professionally.
@@ -186,29 +210,6 @@ This is intentionally a small, local pipeline. At a larger scale (for example, a
 - connecting Tableau directly to the database instead of a CSV export
 
 The bronze, silver and gold design, the SQL logic and the tests would stay the same.
-
-## Findings
-
-**Nationally (Sep 2025 to Aug 2026, compared with Sep 2023 to Aug 2024):**
-- Total antibiotic items fell by **11%** (33.8M → 30.2M).
-- Broad-spectrum items fell by only **3%** (2.55M → 2.48M).
-- So the broad-spectrum share **rose from 7.6% to 8.2%**.
-
-**Which:** co-amoxiclav and cefalexin make up **86%** of broad-spectrum prescribing.
-
-**Where (Sep 2025 to Aug 2026):**
-
-| Region | Broad-spectrum share |
-|---|---|
-| East of England | 9.8% |
-| South East | 8.8% |
-| London | 8.5% |
-| South West | 8.3% |
-| Midlands | 8.2% |
-| North West | 7.5% |
-| North East and Yorkshire | 6.7% |
-
-**When:** the share peaks every August, but this is because total antibiotic prescribing falls in summer. The number of broad-spectrum prescriptions stays fairly steady all year, so stewardship shouldn't focus on one season alone.
 
 ## Decisions
 
