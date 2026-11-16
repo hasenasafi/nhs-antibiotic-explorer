@@ -91,7 +91,7 @@ NHSBSA API → data/raw/*.json → bronze → silver → gold → tests → CSV 
 
 ### 2. Transform — `src/transform.py`
 
-- Opens (or creates) the database file `data/antibiotics.duckdb`
+- Opens/creates the database file `data/antibiotics.duckdb`
 - Runs every SQL file in `sql/` in number order: bronze, then silver, then gold
 - Every layer uses `CREATE OR REPLACE TABLE`, so each run rebuilds from scratch and gives the same result (idempotent)
 
@@ -201,7 +201,7 @@ Raw files are committed, so anyone can clone the repository, install the require
 
 This is intentionally a small, local pipeline. At a larger scale (for example, all prescribing at GP practice level), possible changes would include:
 
-- storing raw files in cloud storage instead of the Git repository, in a compressed format such as Parquet
+- storing raw files in cloud storage instead of the Git repository
 - loading only new months instead of rebuilding the full dataset each run
 - moving from a local DuckDB file to a shared cloud database, so a team can use it
 - scheduling the pipeline to run automatically after each monthly NHS release
