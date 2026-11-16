@@ -13,6 +13,16 @@ I'm a hospital pharmacist, who is keen to move into data engineering. Antimicrob
 - **therefore I have** built a pipeline that extracts 36 months of primary care antibiotic prescribing (BNF section 5.1) from the NHSBSA API, cleans and tests it, and presents it in a Tableau dashboard,
 - **so I can conclude** which broad-spectrum antibiotics, which regions and which times of year stewardship efforts could focus on.
 
+## The data
+
+**Source:** [English Prescribing Dataset (EPD) with SNOMED Code](https://opendata.nhsbsa.net/dataset/english-prescribing-dataset-epd-with-snomed-code), published monthly by NHSBSA under the Open Government Licence. No API key is needed.
+
+**Scope:** antibiotics only (BNF codes starting `0501`), September 2023 to August 2026, by NHS England region.
+
+**Broad-spectrum antibiotics** are defined as co-amoxiclav, cephalosporins and quinolones, the groups monitored in NHS primary care stewardship.
+
+**Why I query the API with SQL instead of downloading files:** each month of the EPD has around 17 million rows. Instead of downloading everything, the extract script sends a SQL query to the portal's `datastore_search_sql` endpoint, so the NHS server filters to antibiotics and adds them up by region. Each month comes back as about 400 rows, and the full extraction takes around a minute.
+
 ## Dashboard
 **[View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/hasena.safi/viz/NHSantibiotics/Dashboard1)**
 
@@ -42,17 +52,7 @@ I'm a hospital pharmacist, who is keen to move into data engineering. Antimicrob
 
 **When:** the share peaks every August, but this is because total antibiotic prescribing falls in summer. The number of broad-spectrum prescriptions stays fairly steady all year, so stewardship shouldn't focus on one season alone.
 
-## The data
-
-**Source:** [English Prescribing Dataset (EPD) with SNOMED Code](https://opendata.nhsbsa.net/dataset/english-prescribing-dataset-epd-with-snomed-code), published monthly by NHSBSA under the Open Government Licence. No API key is needed.
-
-**Scope:** antibiotics only (BNF codes starting `0501`), September 2023 to August 2026, by NHS England region.
-
-**Broad-spectrum antibiotics** are defined as co-amoxiclav, cephalosporins and quinolones, the groups monitored in NHS primary care stewardship.
-
-**Why I query the API with SQL instead of downloading files:** each month of the EPD has around 17 million rows. Instead of downloading everything, the extract script sends a SQL query to the portal's `datastore_search_sql` endpoint, so the NHS server filters to antibiotics and adds them up by region. Each month comes back as about 400 rows, and the full extraction takes around a minute.
-
-### How I used the API
+## How I used the API
 
 The NHSBSA Open Data Portal is built on **CKAN**, a free tool for publishing data. I used the [CKAN API documentation](https://docs.ckan.org/en/latest/api/) to work out how to ask it for data.
 
@@ -64,14 +64,16 @@ I used three types of request:
 | `datastore_search` | Rows from one monthly file (I only asked for one row, to see the column names) | `exploration/02_explore_columns.py` and `src/1_extract.py` |
 | `datastore_search_sql` | The result of my own SQL query, run on the NHS server | `exploration/03_test_antibiotic_query.py` and `src/1_extract.py` |
 
-### Problems I found in the source data
+
+
+## Problems I found in the source data
 
 1. **Hidden nesting:** the API wraps results one level deeper than expected (`result.result.records`).
 2. **Renamed columns (schema drift):** in older months, `BNF_CHEMICAL_SUBSTANCE` holds the drug *code*; in newer months it holds the drug *name*, and the code moved to `BNF_CHEMICAL_SUBSTANCE_CODE`. The extract script checks each month's columns first and picks the right ones, so codes and names are never mixed up.
 3. **Numbers stored as text:** from March 2025, `ITEMS` arrives as text, so the query converts it to a number before adding it up.
 4. **Two month formats:** older months store the month as `202409`, newer months as `'2026-08'`. The silver layer converts both into one date.
 
-## How I explored the data first
+### How I explored the data
 
 Before building the pipeline, I wrote three small scripts in `exploration/` to understand the API. They are not part of the pipeline, but are kept to show how it developed.
 
