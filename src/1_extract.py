@@ -33,7 +33,7 @@ def months_between(start, end):
     return months
 
 
-# Read one row to get that month's column names (they changed over time: schema drift)
+# asks the API for a single row, just to read that month’s column names. 
 def get_columns(month):
     params = {"resource_id": f"EPD_SNOMED_{month}", "limit": 1}
     response = requests.get(SEARCH_URL, params=params, timeout=60)
