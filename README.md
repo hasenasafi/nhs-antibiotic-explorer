@@ -2,6 +2,19 @@
 
 An end-to-end data pipeline that extracts antibiotic prescribing data for England from the NHS Business Services Authority (NHSBSA) API, builds bronze, silver and gold layers in DuckDB with SQL, checks the data with automated tests, and feeds a Tableau dashboard.
 
+
+## About me
+
+I'm a hospital pharmacist, who is keen to move into data engineering. Antimicrobial resistance is something I see the impact of in practice, so I wanted my first pipeline to answer a question I care about professionally.
+
+## What I built and who for
+
+- **As a** hospital pharmacist concerned about antimicrobial resistance,
+- **I would like to** find out where NHS England could target its antibiotic stewardship, focusing on the broad-spectrum antibiotics most linked to resistance,
+- **therefore I have** built a pipeline that extracts 36 months of primary care antibiotic prescribing (BNF section 5.1) from the NHSBSA API, cleans and tests it, and presents it in a Tableau dashboard,
+- **so I can conclude** which broad-spectrum antibiotics, which regions and which times of year stewardship efforts could focus on.
+
+## Dashboard
 **[View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/hasena.safi/viz/NHSantibiotics/Dashboard1)**
 
 ![Dashboard: KPIs, which and where](docs/dashboard_top.png)
@@ -30,17 +43,6 @@ An end-to-end data pipeline that extracts antibiotic prescribing data for Englan
 
 **When:** the share peaks every August, but this is because total antibiotic prescribing falls in summer. The number of broad-spectrum prescriptions stays fairly steady all year, so stewardship shouldn't focus on one season alone.
 
-
-## About me
-
-I'm a hospital pharmacist, who is keen to move into data engineering. Antimicrobial resistance is something I see the impact of in practice, so I wanted my first pipeline to answer a question I care about professionally.
-
-## What I built and who for
-
-- **As a** hospital pharmacist concerned about antimicrobial resistance,
-- **I would like to** find out where NHS England could target its antibiotic stewardship, focusing on the broad-spectrum antibiotics most linked to resistance,
-- **therefore I have** built a pipeline that extracts 36 months of primary care antibiotic prescribing (BNF section 5.1) from the NHSBSA API, cleans and tests it, and presents it in a Tableau dashboard,
-- **so I can conclude** which broad-spectrum antibiotics, which regions and which times of year stewardship efforts could focus on.
 
 ## The data
 
