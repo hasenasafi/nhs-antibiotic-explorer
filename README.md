@@ -65,7 +65,6 @@ I used three types of request:
 | `datastore_search_sql` | The result of my own SQL query, run on the NHS server | `exploration/03_test_antibiotic_query.py` and `src/1_extract.py` |
 
 
-
 ## Problems I found in the source data
 
 1. **Hidden nesting:** the API wraps results one level deeper than expected (`result.result.records`).
