@@ -54,6 +54,18 @@ I'm a hospital pharmacist, who is keen to move into data engineering. Antimicrob
 
 **Why I query the API with SQL instead of downloading files:** each month of the EPD has around 17 million rows. Instead of downloading everything, the extract script sends a SQL query to the portal's `datastore_search_sql` endpoint, so the NHS server filters to antibiotics and adds them up by region. Each month comes back as about 400 rows, and the full extraction takes around a minute.
 
+### How I used the API
+
+The NHSBSA Open Data Portal is built on **CKAN**, a free tool for publishing data. I used the [CKAN API documentation](https://docs.ckan.org/en/latest/api/) to work out how to ask it for data.
+
+I used three types of request:
+
+| Request | What it gives back | Where I used it |
+|---|---|---|
+| `package_show` | The dataset's details, including the list of monthly files | `exploration/01_test_nhs_api.py` |
+| `datastore_search` | Rows from one monthly file (I only asked for one row, to see the column names) | `exploration/02_explore_columns.py` and `src/1_extract.py` |
+| `datastore_search_sql` | The result of my own SQL query, run on the NHS server | `exploration/03_test_antibiotic_query.py` and `src/1_extract.py` |
+
 ### Problems I found in the source data
 
 1. **Hidden nesting:** the API wraps results one level deeper than expected (`result.result.records`).
@@ -78,7 +90,7 @@ NHSBSA API → data/raw/*.json → bronze → silver → gold → tests → CSV 
   (extract)     (raw files)       (DuckDB, SQL layers)     (pytest)  (export)
 ```
 
-### 1. Extract — `src/extract.py`
+*The code excerpts below are simplified to the columns used in the analysis.*
 
 For each of the 36 months, the script runs four functions in order:
 
@@ -145,7 +157,72 @@ path = RAW_DIR / f"antibiotics_{month}_{timestamp}.json"
 path.write_text(json.dumps(data, indent=2))
 ```
 
-### 2. Transform — `src/transform.py`
+For each of the 36 months (September 2023 to August 2026), the script runs four functions in order:
+
+```python
+for month in months_between(START_MONTH, END_MONTH):
+    columns = get_columns(month)
+    sql = build_sql(month, columns)
+    data = fetch_month(month, sql)
+    path = save_raw(month, data)
+```
+
+**`get_columns`** asks the API for one row, just to read that month's column names:
+
+```python
+params = {"resource_id": f"EPD_SNOMED_{month}", "limit": 1}
+response = requests.get(SEARCH_URL, params=params, timeout=60)
+return [field["id"] for field in response.json()["result"]["fields"]]
+```
+
+**`build_sql`** handles the schema drift by checking which columns exist, then writes a query that:
+- keeps only antibiotics (BNF codes starting `0501`)
+- converts `ITEMS` from text to numbers
+- calculates **total items** for each month, region and drug
+
+```python
+if "BNF_CHEMICAL_SUBSTANCE_CODE" in columns:
+    code_col = "BNF_CHEMICAL_SUBSTANCE_CODE"
+    name_col = "BNF_CHEMICAL_SUBSTANCE"
+else:
+    code_col = "BNF_CHEMICAL_SUBSTANCE"
+    name_col = "CHEMICAL_SUBSTANCE_BNF_DESCR"
+```
+
+```sql
+SELECT
+    YEAR_MONTH,
+    REGIONAL_OFFICE_NAME,
+    {code_col} AS bnf_code,
+    {name_col} AS bnf_name,
+    SUM(CAST(ITEMS AS FLOAT64)) AS total_items
+FROM `EPD_SNOMED_{month}`
+WHERE {code_col} LIKE '0501%'
+GROUP BY YEAR_MONTH, REGIONAL_OFFICE_NAME, {code_col}, {name_col}
+```
+
+**`fetch_month`** sends the query. It **retries** temporary failures (timeouts, dropped connections, 5xx errors) up to 3 times, waiting 5 then 10 seconds, and stops straight away on 4xx errors with the server's message. During a real run, the connection dropped on October 2025 and the retry recovered automatically:
+
+```python
+if 400 <= response.status_code < 500:
+    raise RuntimeError(f"{month}: request rejected: {response.text[:500]}")
+...
+except (requests.RequestException, ValueError) as error:
+    logging.warning(f"{month}: attempt {attempt} failed: {error}")
+    if attempt == MAX_ATTEMPTS:
+        raise
+    time.sleep(5 * attempt)
+```
+
+**`save_raw`** saves each response **untouched**, as a timestamped JSON file in `data/raw/`, e.g. `antibiotics_202309_20261110_153412.json`. Files are never overwritten:
+
+```python
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+path = RAW_DIR / f"antibiotics_{month}_{timestamp}.json"
+path.write_text(json.dumps(data, indent=2))
+```
+
+### 2. Transform — `src/2_transform.py`
 
 - Opens/creates the database file `data/antibiotics.duckdb`
 - Runs every SQL file in `sql/` in number order: bronze, then silver, then gold
@@ -170,7 +247,7 @@ FROM read_json_objects('data/raw/*.json', filename = true);
 - Unpacks each raw record into clear columns
 - Keeps only the **newest download of each month**, so repeated pulls aren't counted twice
 - Converts both month formats (`202409` and `'2026-08'`) into one date, e.g. `2024-09-01`
-- Sets types: items as whole numbers, cost in pounds to 2 decimal places
+- Sets types: items as whole numbers
 
 ```sql
 CREATE OR REPLACE TABLE stg_antibiotics AS
@@ -207,7 +284,7 @@ WHERE pulled_at = latest_pull;
 - Creates the final table, `mart_antibiotics_monthly`: one row per month, region and drug
 - Removes rows with region `UNIDENTIFIED` (under 0.1% of items; still kept in silver)
 - Adds a **broad-spectrum flag** (TRUE or FALSE): co-amoxiclav (`0501013K0`), cephalosporins (`0501021`) and quinolones (`050112`)
-- Holds only values that can be added up (items and cost). Percentages, such as the broad-spectrum share, are calculated in Tableau from the totals, so they're correct at any level
+- Holds only values that can be added up. Percentages, such as the broad-spectrum share, are calculated in Tableau from the totals, so they're correct at any level
 
 ```sql
 CREATE OR REPLACE TABLE mart_antibiotics_monthly AS
@@ -226,18 +303,18 @@ WHERE region <> 'UNIDENTIFIED';
 
 ### 3. Test — `tests/test_data_quality.py`
 
-Eight checks on the gold table, run with pytest:
+Eight checks on the gold table, run with pytest. Each test prints its result in the terminal:
 
 - `test_mart_has_rows`: the table isn't empty
 - `test_has_36_months`: no month went missing
 - `test_has_7_regions`: no region was lost or renamed
 - `test_no_duplicate_rows`: each month, region and drug appears once
 - `test_no_missing_key_values`: no blanks in month, region, drug code or items
-- `test_no_negative_values`: no negative items or cost
+- `test_no_negative_values`: no negative values
 - `test_only_antibiotics`: every drug code starts with `0501`
 - `test_broad_spectrum_flag_is_set`: every row has a flag, and some are TRUE
 
-### 4. Export — `src/export.py`
+### 4. Export — `src/3_export.py`
 
 - Copies the gold table to `data/exports/mart_antibiotics_monthly.csv`
 - Tableau Public can't read a DuckDB file directly, but it can read CSV, so this hands the data to the dashboard
@@ -269,7 +346,7 @@ The bronze, silver and gold design, the SQL logic and the tests would stay the s
 ## Decisions
 
 - **Rows with region `UNIDENTIFIED` are kept in silver but excluded from gold.** They can't be linked to a region and are under 0.1% of items.
-- **One gold table with a flag**, rather than separate tables for each measure. Percentages are calculated in Tableau from the totals, so they're always correct at any level of detail.
+- **One gold table with a flag**, rather than separate tables for each measure. 
 - **Region level, not GP practice level**, to keep the extraction small and the story clear.
 
 ## How to run it
@@ -284,7 +361,7 @@ pip install -r requirements.txt
 python src/run.py              # rebuilds the database from the committed raw files, tests it and exports the CSV
 
 # optional, needs internet: refresh the raw data from the API
-python src/extract.py
+python src/1_extract.py
 ```
 
 ## Project structure
@@ -308,7 +385,7 @@ tests/           data-quality tests
 - **Not all antibiotic supply is captured.** The EPD excludes medicines supplied under Patient Group Directions (including Pharmacy First), dental prescribing, and some hospital prescribing.
 
 **Of the pipeline**
-- **Manual refresh.** The date range is fixed in `extract.py`, so new months need a manual change and rerun.
+- **Manual refresh.** The date range is fixed in `src/1_extract.py`, so new months need a manual change and rerun.
 - **Full rebuild.** Every run rebuilds all months from scratch. That's simple and quick at this size, but wouldn't suit a much larger dataset.
 - **Fixed dashboard dates.** The dashboard uses a fixed date range, so it doesn't update itself when new data arrives.
 
