@@ -58,7 +58,7 @@ I'm a hospital pharmacist, who is keen to move into data engineering. Antimicrob
 
 1. **Hidden nesting:** the API wraps results one level deeper than expected (`result.result.records`).
 2. **Renamed columns (schema drift):** in older months, `BNF_CHEMICAL_SUBSTANCE` holds the drug *code*; in newer months it holds the drug *name*, and the code moved to `BNF_CHEMICAL_SUBSTANCE_CODE`. The extract script checks each month's columns first and picks the right ones, so codes and names are never mixed up.
-3. **Numbers stored as text:** from March 2025, `ITEMS` and `NIC` arrive as text, so the query converts them to numbers before adding them up.
+3. **Numbers stored as text:** from March 2025, `ITEMS` arrive as text, so the query converts them to numbers before adding them up.
 4. **Two month formats:** older months store the month as `202409`, newer months as `'2026-08'`. The silver layer converts both into one date.
 
 ## How I explored the data first
@@ -84,8 +84,8 @@ NHSBSA API → data/raw/*.json → bronze → silver → gold → tests → CSV 
 - For each month, asks the API for one row to read that month's **column names**, then picks the right code and name columns (handling the schema drift)
 - Sends a **SQL query** to the API that:
   - keeps only antibiotics (BNF codes starting `0501`)
-  - converts `ITEMS` and `NIC` to numbers
-  - calculates **total items** and **total net ingredient cost (NIC)** for each month, region and drug
+  - converts `ITEMS` to numbers
+  - calculates **total items** and **total net ingredient cost ()** for each month, region and drug
 - **Retries** temporary failures (timeouts, dropped connections, 5xx errors) up to 3 times, waiting 5 then 10 seconds; stops straight away on 4xx errors and logs the server's message. During a real run, the connection dropped on October 2025 and the retry recovered automatically
 - Saves each month's response **untouched**, as a timestamped JSON file in `data/raw/`, e.g. `antibiotics_202309_20261110_153412.json`. Files are never overwritten
 
@@ -127,7 +127,6 @@ WITH parsed AS (
         record ->> 'bnf_code' AS bnf_code,
         record ->> 'bnf_name' AS bnf_name,
         CAST(record ->> 'total_items' AS DOUBLE) AS items,
-        CAST(record ->> 'total_nic' AS DOUBLE) AS nic_gbp
     FROM raw_antibiotics
 ),
 latest AS (
@@ -142,7 +141,6 @@ SELECT
     bnf_code,
     bnf_name,
     CAST(items AS INTEGER) AS items,
-    ROUND(nic_gbp, 2) AS nic_gbp,
     pulled_at
 FROM latest
 WHERE pulled_at = latest_pull;
@@ -163,7 +161,6 @@ SELECT
     bnf_code,
     bnf_name,
     items,
-    nic_gbp,
     (bnf_code LIKE '0501013K0%'
         OR bnf_code LIKE '0501021%'
         OR bnf_code LIKE '050112%') AS is_broad_spectrum
