@@ -34,7 +34,7 @@ MAX_ATTEMPTS = 3                 # how many times to try a request before giving
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 
-def months_between(start, end):
+def months_between(start, end):   #builds the list of months to download,
     """Return every month from start to end, e.g. ["202309", "202310", ...]."""
     months = []
     year, month = int(start[:4]), int(start[4:])   # split "202309" into 2023 and 9
