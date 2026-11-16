@@ -41,7 +41,7 @@ def get_columns(month):
     return [field["id"] for field in response.json()["result"]["fields"]]
 
 
-# Pick the right code and name columns for this month's layout, then build the
+# Pick the right code and name columns for this month's layout, then build the SQL query
 # query: antibiotics only (BNF 0501), text converted to numbers, summed by region and drug
 def build_sql(month, columns):
     if "BNF_CHEMICAL_SUBSTANCE_CODE" in columns:
@@ -57,8 +57,7 @@ def build_sql(month, columns):
         REGIONAL_OFFICE_NAME,
         {code_col} AS bnf_code,
         {name_col} AS bnf_name,
-        SUM(CAST(ITEMS AS FLOAT64)) AS total_items,
-        SUM(CAST(NIC AS FLOAT64)) AS total_nic
+        SUM(CAST(ITEMS AS FLOAT64)) AS total_items
     FROM `EPD_SNOMED_{month}`
     WHERE {code_col} LIKE '0501%'
     GROUP BY YEAR_MONTH, REGIONAL_OFFICE_NAME, {code_col}, {name_col}

@@ -7,7 +7,6 @@ SELECT
     bnf_code,
     bnf_name,
     items,
-    nic_gbp,
     -- Broad-spectrum flag: co-amoxiclav, cephalosporins and quinolones
     (bnf_code LIKE '0501013K0%'
         OR bnf_code LIKE '0501021%'

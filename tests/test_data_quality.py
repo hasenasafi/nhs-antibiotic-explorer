@@ -68,10 +68,10 @@ def test_no_missing_key_values(con):
     assert missing == 0
 
 
-# No negative items or cost
+# No negative item counts
 def test_no_negative_values(con):
-    negatives = query_one(con, f"SELECT COUNT(*) FROM {MART} WHERE items < 0 OR nic_gbp < 0")
-    print(f"\n  Rows with negative values: {negatives} (expected 0)")
+    negatives = query_one(con, f"SELECT COUNT(*) FROM {MART} WHERE items < 0")
+    print(f"\n  Rows with negative items: {negatives} (expected 0)")
     assert negatives == 0
 
 
