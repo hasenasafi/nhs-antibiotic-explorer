@@ -26,9 +26,8 @@ con = duckdb.connect(DB_PATH, read_only=True)
 
 for table in TABLES:
     path = OUT_DIR / f"{table}.csv"        # Builds the file path, e.g. data/exports/mart_antibiotics_monthly.csv
-    # COPY ... TO writes a whole table to a file in one step.
-    # HEADER puts the column names in the first row (Tableau uses them as field names).
-    con.execute(f"COPY {table} TO '{path}' (HEADER, DELIMITER ',')")        #HEADER: put the column names on the first row, DELIMITER ',': separate the values with commas
+    # COPY ... TO writes a whole table to a file in one step, HEADER puts the column names in the first row,  DELIMITER ',': separate the values with commas
+    con.execute(f"COPY {table} TO '{path}' (HEADER, DELIMITER ',')") 
     print(f"Exported {table} to {path}")
 
 con.close()                                      # release the database file

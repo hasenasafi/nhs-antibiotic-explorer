@@ -17,12 +17,10 @@ CREATE OR REPLACE TABLE stg_antibiotics AS
 -- (WITH ... AS creates a temporary step, like doing working on paper.)
 WITH parsed AS (
     SELECT
-        -- From the file name, take the month the data is for.
-        -- e.g. antibiotics_202309_20261110_153412.json -> 202309
+        -- From the file name, take the month the data is for e.g. antibiotics_202309_20261110_153412.json -> 202309
         regexp_extract(source_file, 'antibiotics_(\d{6})_', 1) AS file_month,
 
-        -- From the file name, take when it was downloaded.
-        -- e.g. antibiotics_202309_20261110_153412.json -> 20261110_153412
+        -- From the file name, take when it was downloaded. e.g. antibiotics_202309_20261110_153412.json -> 20261110_153412
         regexp_extract(source_file, 'antibiotics_\d{6}_(\d{8}_\d{6})', 1) AS pulled_at,
 
         -- Take each value out of the raw JSON row (->> means "get this field as text")
