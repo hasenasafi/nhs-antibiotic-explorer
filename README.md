@@ -2,7 +2,6 @@
 
 An end-to-end data pipeline that extracts antibiotic prescribing data for England from the NHS Business Services Authority (NHSBSA) API, builds bronze, silver and gold layers in DuckDB with SQL, checks the data with automated tests, and feeds a Tableau dashboard.
 
-
 ## About me
 
 I'm a hospital pharmacist, who is keen to move into data engineering. Antimicrobial resistance is something I see the impact of in practice, so I wanted my first pipeline to answer a question I care about professionally.
@@ -43,7 +42,6 @@ I'm a hospital pharmacist, who is keen to move into data engineering. Antimicrob
 
 **When:** the share peaks every August, but this is because total antibiotic prescribing falls in summer. The number of broad-spectrum prescriptions stays fairly steady all year, so stewardship shouldn't focus on one season alone.
 
-
 ## The data
 
 **Source:** [English Prescribing Dataset (EPD) with SNOMED Code](https://opendata.nhsbsa.net/dataset/english-prescribing-dataset-epd-with-snomed-code), published monthly by NHSBSA under the Open Government Licence. No API key is needed.
@@ -70,7 +68,7 @@ I used three types of request:
 
 1. **Hidden nesting:** the API wraps results one level deeper than expected (`result.result.records`).
 2. **Renamed columns (schema drift):** in older months, `BNF_CHEMICAL_SUBSTANCE` holds the drug *code*; in newer months it holds the drug *name*, and the code moved to `BNF_CHEMICAL_SUBSTANCE_CODE`. The extract script checks each month's columns first and picks the right ones, so codes and names are never mixed up.
-3. **Numbers stored as text:** from March 2025, `ITEMS` arrive as text, so the query converts them to numbers before adding them up.
+3. **Numbers stored as text:** from March 2025, `ITEMS` arrives as text, so the query converts it to a number before adding it up.
 4. **Two month formats:** older months store the month as `202409`, newer months as `'2026-08'`. The silver layer converts both into one date.
 
 ## How I explored the data first
@@ -92,70 +90,7 @@ NHSBSA API → data/raw/*.json → bronze → silver → gold → tests → CSV 
 
 *The code excerpts below are simplified to the columns used in the analysis.*
 
-For each of the 36 months, the script runs four functions in order:
-
-```python
-for month in months_between(START_MONTH, END_MONTH):
-    columns = get_columns(month)
-    sql = build_sql(month, columns)
-    data = fetch_month(month, sql)
-    path = save_raw(month, data)
-```
-
-**`get_columns`** asks the API for one row, just to read that month's column names:
-
-```python
-params = {"resource_id": f"EPD_SNOMED_{month}", "limit": 1}
-response = requests.get(SEARCH_URL, params=params, timeout=60)
-return [field["id"] for field in response.json()["result"]["fields"]]
-```
-
-**`build_sql`** handles the schema drift by checking which columns exist, then writes the query:
-- keeps only antibiotics (BNF codes starting `0501`)
-- converts `ITEMS` from text to numbers
-- adds up total items for each month, region and drug
-
-```python
-if "BNF_CHEMICAL_SUBSTANCE_CODE" in columns:
-    code_col = "BNF_CHEMICAL_SUBSTANCE_CODE"
-    name_col = "BNF_CHEMICAL_SUBSTANCE"
-else:
-    code_col = "BNF_CHEMICAL_SUBSTANCE"
-    name_col = "CHEMICAL_SUBSTANCE_BNF_DESCR"
-```
-
-```sql
-SELECT
-    YEAR_MONTH,
-    REGIONAL_OFFICE_NAME,
-    {code_col} AS bnf_code,
-    {name_col} AS bnf_name,
-    SUM(CAST(ITEMS AS FLOAT64)) AS total_items
-FROM `EPD_SNOMED_{month}`
-WHERE {code_col} LIKE '0501%'
-GROUP BY YEAR_MONTH, REGIONAL_OFFICE_NAME, {code_col}, {name_col}
-```
-
-**`fetch_month`** sends the query, retrying temporary failures (timeouts, dropped connections, 5xx errors) up to 3 times with growing waits, and stopping straight away on 4xx errors. During a real run, the connection dropped on October 2025 and the retry recovered automatically:
-
-```python
-if 400 <= response.status_code < 500:
-    raise RuntimeError(f"{month}: request rejected: {response.text[:500]}")
-...
-except (requests.RequestException, ValueError) as error:
-    logging.warning(f"{month}: attempt {attempt} failed: {error}")
-    if attempt == MAX_ATTEMPTS:
-        raise
-    time.sleep(5 * attempt)
-```
-
-**`save_raw`** saves each response **untouched**, as a timestamped JSON file in `data/raw/`, so nothing is ever overwritten:
-
-```python
-timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-path = RAW_DIR / f"antibiotics_{month}_{timestamp}.json"
-path.write_text(json.dumps(data, indent=2))
-```
+### 1. Extract — `src/1_extract.py`
 
 For each of the 36 months (September 2023 to August 2026), the script runs four functions in order:
 
@@ -224,7 +159,7 @@ path.write_text(json.dumps(data, indent=2))
 
 ### 2. Transform — `src/2_transform.py`
 
-- Opens/creates the database file `data/antibiotics.duckdb`
+- Opens (or creates) the database file `data/antibiotics.duckdb`
 - Runs every SQL file in `sql/` in number order: bronze, then silver, then gold
 - Every layer uses `CREATE OR REPLACE TABLE`, so each run rebuilds from scratch and gives the same result (idempotent)
 
@@ -259,7 +194,7 @@ WITH parsed AS (
         record ->> 'REGIONAL_OFFICE_NAME' AS region,
         record ->> 'bnf_code' AS bnf_code,
         record ->> 'bnf_name' AS bnf_name,
-        CAST(record ->> 'total_items' AS DOUBLE) AS items,
+        CAST(record ->> 'total_items' AS DOUBLE) AS items
     FROM raw_antibiotics
 ),
 latest AS (
