@@ -52,7 +52,7 @@ I'm a hospital pharmacist, who is keen to move into data engineering. Antimicrob
 
 **When:** the share peaks every August, but this is because total antibiotic prescribing falls in summer. The number of broad-spectrum prescriptions stays fairly steady all year, so stewardship shouldn't focus on one season alone.
 
-### How I used the API
+## How I used the API
 
 The NHSBSA Open Data Portal is built on **CKAN**, a free tool for publishing data. I used the [CKAN API documentation](https://docs.ckan.org/en/latest/api/) to work out how to ask it for data.
 
@@ -64,6 +64,7 @@ I used three types of request:
 | `datastore_search` | Rows from one monthly file (I only asked for one row, to see the column names) | `exploration/02_explore_columns.py` and `src/1_extract.py` |
 | `datastore_search_sql` | The result of my own SQL query, run on the NHS server | `exploration/03_test_antibiotic_query.py` and `src/1_extract.py` |
 
+
 ## Problems I found in the source data
 
 1. **Hidden nesting:** the API wraps results one level deeper than expected (`result.result.records`).
@@ -71,7 +72,7 @@ I used three types of request:
 3. **Numbers stored as text:** from March 2025, `ITEMS` arrives as text, so the query converts it to a number before adding it up.
 4. **Two month formats:** older months store the month as `202409`, newer months as `'2026-08'`. The silver layer converts both into one date.
 
-### How I explored the data first
+### How I explored the data
 
 Before building the pipeline, I wrote three small scripts in `exploration/` to understand the API. They are not part of the pipeline, but are kept to show how it developed.
 
