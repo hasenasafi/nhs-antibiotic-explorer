@@ -80,14 +80,70 @@ NHSBSA API → data/raw/*.json → bronze → silver → gold → tests → CSV 
 
 ### 1. Extract — `src/extract.py`
 
-- Builds the list of months to fetch (September 2023 to August 2026)
-- For each month, asks the API for one row to read that month's **column names**, then picks the right code and name columns (handling the schema drift)
-- Sends a **SQL query** to the API that:
-  - keeps only antibiotics (BNF codes starting `0501`)
-  - converts `ITEMS` to numbers
-  - calculates **total items** and **total net ingredient cost ()** for each month, region and drug
-- **Retries** temporary failures (timeouts, dropped connections, 5xx errors) up to 3 times, waiting 5 then 10 seconds; stops straight away on 4xx errors and logs the server's message. During a real run, the connection dropped on October 2025 and the retry recovered automatically
-- Saves each month's response **untouched**, as a timestamped JSON file in `data/raw/`, e.g. `antibiotics_202309_20261110_153412.json`. Files are never overwritten
+For each of the 36 months, the script runs four functions in order:
+
+```python
+for month in months_between(START_MONTH, END_MONTH):
+    columns = get_columns(month)
+    sql = build_sql(month, columns)
+    data = fetch_month(month, sql)
+    path = save_raw(month, data)
+```
+
+**`get_columns`** asks the API for one row, just to read that month's column names:
+
+```python
+params = {"resource_id": f"EPD_SNOMED_{month}", "limit": 1}
+response = requests.get(SEARCH_URL, params=params, timeout=60)
+return [field["id"] for field in response.json()["result"]["fields"]]
+```
+
+**`build_sql`** handles the schema drift by checking which columns exist, then writes the query:
+- keeps only antibiotics (BNF codes starting `0501`)
+- converts `ITEMS` from text to numbers
+- adds up total items for each month, region and drug
+
+```python
+if "BNF_CHEMICAL_SUBSTANCE_CODE" in columns:
+    code_col = "BNF_CHEMICAL_SUBSTANCE_CODE"
+    name_col = "BNF_CHEMICAL_SUBSTANCE"
+else:
+    code_col = "BNF_CHEMICAL_SUBSTANCE"
+    name_col = "CHEMICAL_SUBSTANCE_BNF_DESCR"
+```
+
+```sql
+SELECT
+    YEAR_MONTH,
+    REGIONAL_OFFICE_NAME,
+    {code_col} AS bnf_code,
+    {name_col} AS bnf_name,
+    SUM(CAST(ITEMS AS FLOAT64)) AS total_items
+FROM `EPD_SNOMED_{month}`
+WHERE {code_col} LIKE '0501%'
+GROUP BY YEAR_MONTH, REGIONAL_OFFICE_NAME, {code_col}, {name_col}
+```
+
+**`fetch_month`** sends the query, retrying temporary failures (timeouts, dropped connections, 5xx errors) up to 3 times with growing waits, and stopping straight away on 4xx errors. During a real run, the connection dropped on October 2025 and the retry recovered automatically:
+
+```python
+if 400 <= response.status_code < 500:
+    raise RuntimeError(f"{month}: request rejected: {response.text[:500]}")
+...
+except (requests.RequestException, ValueError) as error:
+    logging.warning(f"{month}: attempt {attempt} failed: {error}")
+    if attempt == MAX_ATTEMPTS:
+        raise
+    time.sleep(5 * attempt)
+```
+
+**`save_raw`** saves each response **untouched**, as a timestamped JSON file in `data/raw/`, so nothing is ever overwritten:
+
+```python
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+path = RAW_DIR / f"antibiotics_{month}_{timestamp}.json"
+path.write_text(json.dumps(data, indent=2))
+```
 
 ### 2. Transform — `src/transform.py`
 
