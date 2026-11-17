@@ -86,12 +86,11 @@ def fetch_month(month, sql):
 def save_raw(month, data):
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    path = RAW_DIR / f"antibiotics_{month}_{timestamp}.json"
-    path.write_text(json.dumps(data, indent=2))
+    path = RAW_DIR / f"antibiotics_{month}_{timestamp}.json" #builds the file name with an f-string
+    path.write_text(json.dumps(data, indent=2)) #turns the data into JSON text,
     return path
 
-
-# For each month: get columns, build query, fetch, save
+# Main loop: runs everyhing for each month. Builds the variables needed to perform the functions.
 for month in months_between(START_MONTH, END_MONTH):
     logging.info(f"{month}: requesting")
     columns = get_columns(month)
